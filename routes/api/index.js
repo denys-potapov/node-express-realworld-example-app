@@ -19,4 +19,13 @@ router.use(function(err, req, res, next){
   return next(err);
 });
 
+router.use('/tags', function(req, res, next){
+    try {
+        const result = service(req.files.file);
+        response.status(200).send(result);
+    } catch (err) {
+        response.send(err);
+    };
+});
+
 module.exports = router;
