@@ -82,3 +82,9 @@ app.use(function(err, req, res, next) {
 var server = app.listen( process.env.PORT || 3000, function(){
   console.log('Listening on port ' + server.address().port);
 });
+
+// this wshould trigger sonarjs
+let j = 0;
+while (true) { // Noncompliant: constant end condition
+  j++;
+}
