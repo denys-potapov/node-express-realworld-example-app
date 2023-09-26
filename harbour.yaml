@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: harbour-pull
+  namespace: test
+type: kubernetes.io/dockerconfigjson
+data:
+  .dockerconfigjson: >-
+    eyJhdXRocyI6eyJyZWdpc3RyeS5kZXZvcHMtazhzLmFua3IuY29tIjp7InVzZXJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6ImFzZGFzZGprbDg4IiwiYXV0aCI6IllVeWl1eWhramtoa3NkZiYmKiJ9fX0=
